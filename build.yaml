@@ -116,3 +116,30 @@ include:
   - board: nice_nano_v2
     shield: crosses_right
     artifact-name: crosses_standalone_right
+    snippet: zmk-usb-logging
+
+    # Crosses/bridges 54 without a dongle
+  - board: nice_nano_v2
+    shield: crosses_left
+    artifact-name: crosses54_standalone_left
+    cmake-args: -DCROSSES54=y
+  - board: nice_nano_v2
+    shield: crosses_right
+    artifact-name: crosses54_standalone_right
+    cmake-args: -DCROSSES54=y
+
+    # Crosses/bridges 54 with dongle
+  - board: nice_nano_v2
+    shield: crosses_dongle
+    artifact-name: crosses54_dongle_central
+    cmake-args: -DCROSSES54=y
+    snippet: zmk-usb-logging
+  - board: nice_nano_v2
+    shield: crosses_left
+    artifact-name: crosses54_dongle_left
+    cmake-args: -DCROSSES54=y -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: nice_nano_v2
+    shield: crosses_right
+    artifact-name: crosses54_dongle_right
+    snippet: zmk-usb-logging
+    cmake-args: -DCROSSES54=y -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n

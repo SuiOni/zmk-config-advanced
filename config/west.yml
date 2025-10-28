@@ -53,7 +53,8 @@ manifest:
       url-base: https://github.com/bluedrink9
     - name: oleksandrmaslov
       url-base: https://github.com/oleksandrmaslov
-
+    - name: joaopedropio
+      url-base: https://github.com/joaopedropio
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -72,7 +73,7 @@ manifest:
 
     - name: zmk-helpers
       remote: coredump
-      revision: forager-labels
+      revision: 54key-labels
       path: modules/zmk/helpers
 
     - name: zmk-locales
@@ -143,8 +144,12 @@ manifest:
     - name: zmk-keyboard-crosses
       revision: main
       remote: coredump
-#      import: west.yml
       path: modules/zmk/keyboard-crosses
+
+    - name: zmk-keyboard-crosses-dongle
+      revision: main
+      remote: coredump
+      path: modules/zmk/keyboard-crosses-dongle
 
     - name: zmk-poor-mans-led-indicator
       remote: bluedrink9
@@ -165,6 +170,11 @@ manifest:
       remote: oleksandrmaslov
       revision: main
       path: modules/zmk/pointing-acceleration
+
+    - name: snake-module
+      remote: joaopedropio
+      revision: master
+      path: modules/snake-module
 
     - name: zephyr
       revision: v3.5.0+zmk-fixes
