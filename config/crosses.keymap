@@ -78,8 +78,8 @@
 };
 
 // /delete-node/ &trackball_central_listener;
-/delete-node/ &trackball_peripheral_split;
-/delete-node/ &trackball_peripheral_listener;
+// /delete-node/ &trackball_peripheral_split;
+//     /delete-node/ &trackball_peripheral_listener;
 
 #include <scroll-snap.dtsi>
 #include <input/processors/report_rate_limit.dtsi>
