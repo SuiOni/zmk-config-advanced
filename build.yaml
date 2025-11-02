@@ -50,7 +50,7 @@ include:
   - board: seeeduino_xiao_ble
     shield: totem_left rgbled_adapter
     artifact-name: totem_standalone_left
-    cmake-args: -DBODGE=y
+    cmake-args: -DBODGE=n
   - board: seeeduino_xiao_ble
     shield: totem_right rgbled_adapter
     artifact-name: totem_standalone_right

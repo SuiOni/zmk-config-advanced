@@ -171,6 +171,10 @@ manifest:
       revision: main
       path: modules/zmk/pointing-acceleration
 
+    - name: zmk-unicode
+      remote: urob
+      revision: v0.3 # set to same as ZMK version above
+
     - name: snake-module
       remote: joaopedropio
       revision: master
