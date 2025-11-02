@@ -9,6 +9,6 @@
 //            , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 //            ;
 //};
-#endif
+//#endif
 #include "zmk-helpers/key-labels/totem.h"
 #include "base.keymap"
