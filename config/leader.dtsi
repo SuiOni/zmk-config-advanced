@@ -13,6 +13,7 @@
             }; \
         }; \
     };
+ZMK_LEADER_SEQUENCE(off, PM_KEY, O F F)
 
 /* German umlauts */
 ZMK_LEADER_SEQUENCE(de_ae,      &uc UC_DE_AE,         A)  // ä
